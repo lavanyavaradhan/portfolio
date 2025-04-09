@@ -1,0 +1,552 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  --primary-color: #022c00;
+  --secondary-color: #067400;
+  --teritary-color: #f8f8ff;
+}
+
+body {
+  font-family: "lexend", sans-serif;
+  background-color: #fbfbfb;
+  color: var(--primary-color);
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+/* ------------------------------------- Landing page - Starting */
+.landing-page {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("./Images/LandingPage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+  -webkit-animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.sub-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+  position: relative;
+  top: 75%;
+  padding: 0 90px 0 0;
+}
+
+.sub-content h1 {
+  font-weight: 500;
+  font-size: 3.5rem;
+  color: var(--primary-color);
+}
+
+.sub-content h1 span {
+  font-weight: 200;
+}
+
+.sub-content .btn1 button {
+  font-weight: 300;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: var(--secondary-color);
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  transition: transform 0.5s ease-in-out;
+  -webkit-transition: transform 0.5s ease-in-out;
+  -moz-transition: transform 0.5s ease-in-out;
+  -ms-transition: transform 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out;
+}
+
+.sub-content .btn1 :hover {
+  color: var(--primary-color);
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+
+.sub-content .btn1 button i {
+  display: flex;
+  align-items: center;
+}
+/* ---------------------------- Landing page - Ending */
+
+/* ---------------------------- Main container -Starting */
+.main-container {
+  margin-top: 85px; 
+  width: 100%;         
+  /* max-width: 1200px; */
+  /* margin-left: auto;   
+  margin-right: auto; */
+  overflow-y: auto;    
+  padding: 2rem 3rem;
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* ---------------about page -starting */
+.aboutmain-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.aboutmain-container .about-content1{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.aboutmain-container .about-content1 .left-panel{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.aboutmain-container .about-content1 .left-panel .about-profile1{
+  width: 100%;
+  height: 450px;
+  border-radius: 5px;
+  background-image: url("./Images/AboutProfile.jpeg");
+  background-size: cover;
+  background-position: center;
+ box-shadow: rgba(0, 0, 0, 0.377) 0px 4px 6px -1px,
+  rgba(0, 0, 0, 0.342) 0px 2px 4px -1px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.aboutmain-container .about-content1 .left-panel p{
+  text-align: justify;
+  font-family: "Linden Hill", serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.aboutmain-container .about-content1 .right-panel{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.aboutmain-container .about-content1 .right-panel .about-profile2{
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  background-image: url("./Images/AboutProfile.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: rgba(0, 0, 0, 0.377) 0px 4px 6px -1px,
+  rgba(0, 0, 0, 0.342) 0px 2px 4px -1px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.aboutmain-container .about-content1 .right-panel p{
+  text-align: justify;
+  font-family: "Linden Hill", serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.aboutmain-container .about-content1 .right-panel .artwork-link{
+  width: 100%;
+  display: flex;
+  gap:12px;
+}
+
+.aboutmain-container .about-content1 .right-panel .artwork-link p{
+  color: var(--secondary-color);
+  font-family: "lexend", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.aboutmain-container .about-content1 .right-panel .artwork-link .btn2{
+  text-decoration: underline;
+  font-weight: 300;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  color: var(--primary-color);
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  transition: transform 0.5s ease-in-out;
+  -webkit-transition: transform 0.5s ease-in-out;
+  -moz-transition: transform 0.5s ease-in-out;
+  -ms-transition: transform 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out;
+}
+
+.aboutmain-container .about-content1 .right-panel .artwork-link .btn2:hover{
+  color: var(--secondary-color);
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+
+.aboutmain-container .about-content2{
+  width: 100%;
+  padding: 0 150px;
+  text-align: center;
+  font-family: "lexend", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+.aboutmain-container .about-content3{
+  width: 100%;
+  padding: 0 40px;
+  display: flex;
+  gap: 16px;
+ justify-content: center;
+  text-align: center;
+  font-family: "lexend", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  color: var(--secondary-color);
+}
+
+.aboutmain-container .about-content3 .btn2{
+  font-weight: 300;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  color: var(--primary-color);
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  transition: transform 0.5s ease-in-out;
+  -webkit-transition: transform 0.5s ease-in-out;
+  -moz-transition: transform 0.5s ease-in-out;
+  -ms-transition: transform 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out;
+}
+
+.aboutmain-container .about-content3 .btn2:hover{
+  color: var(--secondary-color);
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+
+/* ---------------about page -ending */
+
+/* ---------------artwork page- starting */
+.artworkmain-container{
+  width: 100%;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start; */
+  gap: 20px;
+  padding-top: 30px;
+}
+
+.artworkmain-container .submenubar{
+  width: 100%;
+}
+
+.artworkmain-container .indicator{
+  height: 500px;
+  font-family: "lexend giga", sans-serif;
+  font-weight: 300;
+  font-size: 3rem;
+  color: rgba(67, 155, 67, 0.6);
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: center;
+}
+/* ---------------artwork page - ending */
+
+/* --------------Marchmindset 2025*/
+.main-container .layoutmain-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+ gap: 20px;
+}
+
+.layoutmain-container series-layout p span{
+  font-family: "lexend", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+
+.layoutmain-container .drawing-container{
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: start;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  column-gap: 20px;
+}
+
+.layoutmain-container .drawing-container art-card a img{
+  width: auto;
+  height:400px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;           
+  border-radius: 10px;
+}
+/* ---------------marchmindset2025 end */
+
+/* ---------------custom arts start */
+.main-container .artworkmain-container .customarts-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.artworkmain-container .customarts-container art-card a img{
+  width: auto;
+  height:400px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;           
+  border-radius: 10px;
+}
+
+/* ---------------custom arts end */
+
+/* ---------------contact page - starting */
+.main-container .contactmain-container{
+  z-index: 1;
+  height: 500px;
+  background-image: url('./Images/ContactProfile.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.main-container .contactmain-container .content{
+  width: 60%;
+  height: auto;
+  padding: 40px 40px;
+  background-color: rgba(248, 248, 248, 60%);
+  backdrop-filter: blur(4px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-family: "lexend", sans-serif;
+  font-size: 2rem;
+  font-weight: 200;
+  color: var(--primary-color);
+  text-align: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.main-container .contactmain-container .content span{
+  font-weight: 400;
+  color: var(--secondary-color);
+}
+
+/* ------------------------------ contact page -Ending */
+
+/* ------------------------------ Tablet Media screen */
+@media screen and (max-width: 768px) {
+  /* ----landing page */
+  .sub-content {
+    top: 65%;
+    padding: 0 50px 0 0;
+  }
+  .sub-content h1 {
+    font-size: 2.5rem;
+  }
+  .sub-content .btn1 button {
+    font-size: 1.125rem;
+  }
+
+  /* --------------Marchmindset 2025*/
+series-layout p span{
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+  /* ------contact page */
+  .main-container .contactmain-container .content{
+    font-size: 1.5rem;
+  }
+
+  /* -----about page */
+  .aboutmain-container .about-content1 .left-panel .about-profile1{
+    background-position: left;
+  }
+  
+  .aboutmain-container .about-content1 .left-panel p{
+    font-size: 1.125rem ;
+  }
+
+  .aboutmain-container .about-content1 .right-panel p{
+    font-size: 1.125rem;
+  }
+
+  .aboutmain-container .about-content1 .right-panel .artwork-link .btn2{
+    font-size: 0.875;
+  }
+
+  .aboutmain-container .about-content2{
+    padding: 0 45px;
+    font-size: 1.2rem;
+  }
+}
+
+/* ------------------------------ Phone media screen */
+@media screen and (max-width: 480px) {
+  /* ------landing page */
+  .sub-content {
+    top: 70%;
+    padding: 0 40px 0 0;
+  }
+  .sub-content h1 {
+    font-size: 1.625rem;
+  }
+  .sub-content .btn1 button {
+    font-size: 1rem;
+  }
+
+    /* --------------Marchmindset 2025*/
+series-layout p span{
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.layoutmain-container .drawing-container art-card a img{
+  width: auto;
+  height: 400px;
+  background-size: contain;
+}
+
+  /* ------contact page */
+.main-container .contactmain-container{
+  height: 300px;
+}
+
+  .main-container .contactmain-container .content{
+    font-size: 1rem;
+  }
+
+  /* -----about page */
+  .main-container{
+    padding: 1rem 2rem ;
+  }
+
+  .aboutmain-container{
+    gap: 10px;
+  }
+
+  .aboutmain-container .about-content1{
+    flex-direction: column;
+  }
+
+  .aboutmain-container .about-content1 .left-panel{
+    width: 100%;
+    order: 2;
+  }
+
+  .aboutmain-container .about-content1 .left-panel p{
+    order: 1;
+  }
+
+  .aboutmain-container .about-content1 .left-panel .about-profile1{
+    height: 350px;
+    order: 2;
+  }
+
+  .aboutmain-container .about-content1 .right-panel{
+    width: 100%;
+    order: 1;
+  }
+  
+  .aboutmain-container .about-content1 .right-panel .about-profile2{
+    height: 330px;
+    background-position: center;
+  }
+
+  .aboutmain-container .about-content2{
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 200;
+  }
+
+  .aboutmain-container .about-content3{
+    padding: 0;
+    font-size: 1rem;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .aboutmain-container .about-content3 .btn3{
+    justify-content: center;
+  }
+
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watercolor Drawings</title>
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- Components -->
+    <script src="../components/navbar.js" async></script>
+    <script src="../components/footer.js" async></script>
+    <script src="../components/contacticons.js" async></script>
+    <script src="../components/titlecard.js" async></script>
+    <script src="../components/discoverbtn.js" async></script>
+    <script src="../components/artworksubmenu.js" async></script>
+
+
+    <!-- Google fonts: Lexend, Lexend Giga, Linden Hill -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Lexend:wght@100..900&family=Linden+Hill:ital@0;1&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav-bar></nav-bar>
+
+    <!-- The whole page content -->
+    <div class="main-container">
+
+        <div class="artworkmain-container">
+            <div class="submenubar">
+                <artworks-submenu></artworks-submenu>
+            </div>
+
+<!-- ! --------------------Here you add upcoming title card -->
+
+            <title-card title="March Mindset 2025" link="../artworks_pages/marchmindset2025.html">
+                <img slot="image" src="../Images/MarMind25.jpg" alt="MarchMindset2025">
+                <p slot="description">– a watercolor series that reflects my thoughts and feelings in Rishikesh,
+                    blending emotions with the serenity of nature through the essence of colors. Each painting tells a
+                    story, capturing the experiences and moments I went through in March. Explore the collection and
+                    witness my journey unfold through art.</p>  
+            </title-card>
+             
+        </div>
+
+    </div>
+
+    <!-- footer section -->
+    <footer-section></footer-section>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
