@@ -4,7 +4,7 @@ console.log("Hello, Welcome to My Portfolio website");
 document.addEventListener("DOMContentLoaded",function(){
     const aboutbtn = document.querySelector(".btn1");
     aboutbtn.addEventListener("click", ()=>{
-        window.location.href = "../pages/about.html"
+        window.location.href = "pages/about.html"
     });
 });
 
