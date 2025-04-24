@@ -104,7 +104,7 @@ class titleCard extends HTMLElement {
 
          <div class="titlecard">
                 
-            <slot name="image"></slot>
+            <slot name="image">${link}</slot>
             
             <div class="rightpanel">
                 <div class="card-title">
@@ -120,8 +120,13 @@ class titleCard extends HTMLElement {
         `;
 
         var btnlink = this.shadowRoot.querySelector(".titlecard .rightpanel discover-btn");
+        var imglink = this.shadowRoot.querySelector(".titlecard slot")
 
         btnlink.addEventListener("click", function(){
+            window.location.href = `${link}`;
+        })
+
+        imglink.addEventListener("click", function(){
             window.location.href = `${link}`;
         })
 
