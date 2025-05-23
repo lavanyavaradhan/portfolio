@@ -292,16 +292,22 @@ body {
   width: 100%;
 }
 
-.artworkmain-container .indicator{
-  height: 500px;
-  font-family: "lexend giga", sans-serif;
-  font-weight: 300;
-  font-size: 3rem;
-  color: rgba(67, 155, 67, 0.6);
- display: flex;
- flex-direction: row;
- align-items: center;
- justify-content: center;
+.artworkmain-container .charcoal-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.artworkmain-container .charcoal-container art-card a img{
+  width: auto;
+  height:400px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;           
+  border-radius: 10px;
 }
 /* ---------------artwork page - ending */
 

@@ -4,7 +4,7 @@ console.log("Hello, Welcome to My Portfolio website");
 document.addEventListener("DOMContentLoaded",function(){
     const aboutbtn = document.querySelector(".btn1");
     aboutbtn.addEventListener("click", ()=>{
-        window.location.href = "/portfolio/pages/about.html"
+        window.location.href = "../pages/about.html"
     });
 });
 
@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded",function(){
 //     window.location.href = "./pages/about.html"
 // }
 // aboutbtn.addEventListener("click", gotoaboutpage)
+
 
 // artwork button - interaction
 const btn = document.getElementById("artwork-btn");

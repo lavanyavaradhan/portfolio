@@ -12,6 +12,7 @@
     <script src="../components/footer.js" async></script>
     <script src="../components/contacticons.js" async></script>
     <script src="../components/artworksubmenu.js" async></script>
+    <script src="../components/artcard.js" async></script>
 
 
     <!-- Google fonts: Lexend, Lexend Giga, Linden Hill -->
@@ -23,6 +24,9 @@
 
     <!-- Bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- cdn link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.5/dist/css/lightbox.min.css">
 </head>
 
 <body>
@@ -36,7 +40,16 @@
             <div class="submenubar">
             <artworks-submenu></artworks-submenu>
         </div>
-        <div class="indicator">Work in Progress :-></div>
+
+ <!-- ! --------------------Here you add upcoming artworks -->
+
+        <div class="charcoal-container">
+            <art-card name="Love" artmedium="Bristol 250GSM 16.5*23.4 in">
+                <a slot="image" data-lightbox="ch-arts" href="../Images/Charcoal/BabyLove.jpg">
+                    <img src="../Images/Charcoal/BabyLove.jpg" alt="Love">
+                </a>
+            </art-card>
+        </div>
         </div>
 
     </div>
@@ -44,6 +57,8 @@
     <!-- footer section -->
     <footer-section></footer-section>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.5/dist/js/lightbox.min.js"></script>
     <script src="../script.js"></script>
 </body>
 
