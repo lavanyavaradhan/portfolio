@@ -72,7 +72,7 @@ class artworkSubMenu extends HTMLElement {
                 <ul>
                     <li><a href="../pages/artworks.html">Charcoal</a></li>
                     <li><a href="../pages/watercolor.html">Watercolor</a></li>
-                    <li><a href="../pages/customarts.html">Cutom Artworks</a></li>
+                    <li><a href="../pages/oilpaint.html">Oil Painting</a></li>
                 </ul>
             </div>
 
